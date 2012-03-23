@@ -35,13 +35,6 @@ public class main extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // adView = new AdView(this, AdSize.BANNER, "a14f661da8ec5eb");
-        //LinearLayout layout = (LinearLayout)findViewById(R.id.adLayout);
-        //layout.addView(adView);
-       // AdRequest adRequest = new AdRequest();
-        //adRequest.addTestDevice(AdRequest.TEST_EMULATOR);               // Emulator
-        
-        //adView.loadAd(adRequest);
         setContentView(R.layout.main);
          Intent i = new Intent(main.this,ProgressBar.class);
         startActivity(i);
@@ -76,13 +69,7 @@ public class main extends Activity {
         
         
     }
-//    @Override
-//    public void onDestroy() {
-//      if (adView != null) {
-//        adView.destroy();
-//      }
-//      super.onDestroy();
-//    }
+
     private void fillSpinner(){
     	 
     	CurrencyDbAdapter db = new CurrencyDbAdapter(this);
